@@ -43,3 +43,6 @@ def video_feed(request, camera_id):
         generate_frames(camera_id),
         content_type='multipart/x-mixed-replace; boundary=frame'
     )
+
+
+# add trhading scripts
