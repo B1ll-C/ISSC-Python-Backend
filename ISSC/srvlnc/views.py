@@ -12,8 +12,7 @@ import os
 from pathlib import Path
 
 
-env_path = Path('G:/Freelance/ISSC-Python-Backend') / '.env'
-load_dotenv(dotenv_path=env_path)
+load_dotenv('../../.env')
 api_key = os.getenv("API_KEY")
 model_id = os.getenv("MODEL_ID")
 
