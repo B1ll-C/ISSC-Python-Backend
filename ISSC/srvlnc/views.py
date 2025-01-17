@@ -102,7 +102,7 @@ def background_inference(camera_id):
             frame_queue.get()
         frame_queue.put(annotated_frame)
 
-        # Log detections
+        # INSERT CODE FOR EMAIL
         if len(detections) > 0:
             print(f"Camera {camera_id}: {len(detections)} objects detected.")
 
