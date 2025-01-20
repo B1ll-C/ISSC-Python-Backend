@@ -1,20 +1,17 @@
 # Import the InferencePipeline object
 from inference import InferencePipeline
+
 # import VideoFrame for type hinting
 from inference.core.interfaces.camera.entities import VideoFrame
 
+
 import cv2
+import easyocr
 import numpy as np
-import os
-from inference_sdk import InferenceHTTPClient
 
-# Set up the Roboflow Inference client
-CLIENT = InferenceHTTPClient(
-    api_url="https://infer.roboflow.com",
-    api_key= "sDa7pej7MbiBdSRowjPm"
-)
+reader = easyocr.Reader(['en'], gpu=False)
 
-def sink(predictions: dict, video_frame):
+def sink(predictions: dict, video_frame: VideoFrame):
     try:
         frame = video_frame.image
 
@@ -36,10 +33,8 @@ def sink(predictions: dict, video_frame):
                 custom_class_name = "Person"
                 x1, y1, x2, y2 = map(int, bbox)
 
-   
-                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)  # Green box
 
-
+                cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
                 label = f"{custom_class_name} ({confidence:.2f})"
                 cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
@@ -51,36 +46,40 @@ def sink(predictions: dict, video_frame):
                 plate_detections.confidence,
                 plate_detections.data['class_name']
             ):
-
-                custom_plate_class_name = "License Plate"
                 x1, y1, x2, y2 = map(int, bbox)
+
+
+                height, width, _ = frame.shape
+                x1, y1, x2, y2 = max(0, x1), max(0, y1), min(width, x2), min(height, y2)
+
+                if x1 == x2 or y1 == y2:
+                    continue
+
+                cropped_image = frame[y1:y2, x1:x2]
+
+                gray = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2GRAY)
+                _, thresholded = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+                denoised = cv2.fastNlMeansDenoising(thresholded, None, 30, 7, 21)
+
+                result = reader.readtext(denoised)
 
 
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
 
+                if result:
+                    for detection in result:
+                        _, text, confidence = detection
 
-                label = f"{custom_plate_class_name} ({confidence:.2f})"
-                cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+                        ocr_label = f"Plate : {text} ({confidence:.2f})"
 
-                cropped_img = frame[y1:y2, x1:x2]
-
-                temp_cropped_image_path = "temp_cropped_image.jpg"
-                cv2.imwrite(temp_cropped_image_path, cropped_img)
-
-                result = CLIENT.ocr_image(inference_input=temp_cropped_image_path)
-
-
-                if result and 'predictions' in result:
-                    ocr_text = result['predictions']
-                    if ocr_text:
-                        ocr_label = f"Text: {ocr_text[0]['text']}"
-                        print(f"OCR Text: {ocr_text[0]['text']}")
-                        cv2.putText(frame, ocr_label, (x1, y2 + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
+                        text_size = cv2.getTextSize(ocr_label, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0]
+                        text_w, text_h = text_size
+                        cv2.rectangle(frame, (x1, y2 + 10), (x1 + text_w, y2 + 10 + text_h), (0, 0, 255), -1)
 
 
-                os.remove(temp_cropped_image_path)
+                        cv2.putText(frame, ocr_label, (x1, y2 + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
-
+        # Display annotated frame
         cv2.imshow("Inference", frame)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
