@@ -1,0 +1,58 @@
+[
+  {
+    "model_predictions": {
+      "xyxy": [],
+      "mask": null,
+      "confidence": [],
+      "class_id": [],
+      "tracker_id": null,
+      "data": {
+        "class_name": [],
+        "detection_id": [],
+        "parent_id": [],
+        "image_dimensions": [],
+        "inference_id": [],
+        "prediction_type": [],
+        "root_parent_id": [],
+        "root_parent_coordinates": [],
+        "root_parent_dimensions": [],
+        "parent_coordinates": [],
+        "parent_dimensions": []
+      },
+      "metadata": {}
+    },
+    "label_visualization": "<inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x000001FD5F0CBF10>",
+    "model_1_predictions": {
+      "xyxy": [
+        [247, 317, 346, 365]
+      ],
+      "mask": null,
+      "confidence": [0.80621278],
+      "class_id": [0],
+      "tracker_id": null,
+      "data": {
+        "class_name": ["License Plate Recognition - v6 2024-10-23 6-33pm"],
+        "detection_id": ["81c355a6-c56a-47d2-b52d-875cdeb97d47"],
+        "parent_id": ["image.[0]"],
+        "image_dimensions": [[480, 640]],
+        "inference_id": ["7210fb84-b4be-45ea-bbbe-c87b27268a82"],
+        "prediction_type": ["object-detection"],
+        "root_parent_id": ["image.[0]"],
+        "root_parent_coordinates": [[0, 0]],
+        "root_parent_dimensions": [[480, 640]],
+        "parent_coordinates": [[0, 0]],
+        "parent_dimensions": [[480, 640]]
+      },
+      "metadata": {}
+    },
+    "dynamic_crop": [
+      "<inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x000001FD5F1D4340>"
+    ],
+    "google_gemini": [
+      {
+        "output": "HHA B 208",
+        "classes": null
+      }
+    ]
+  }
+]

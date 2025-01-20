@@ -1,0 +1,151 @@
+{
+  "model_predictions": {
+    "xyxy": [
+      [14.0, 16.0, 125.0, 331.0],
+      [454.0, 18.0, 547.0, 333.0],
+      [206.0, 16.0, 285.0, 330.0],
+      [293.0, 16.0, 368.0, 332.0],
+      [130.0, 17.0, 198.0, 328.0],
+      [565.0, 19.0, 637.0, 333.0],
+      [380.0, 17.0, 445.0, 331.0]
+    ],
+    "mask": null,
+    "confidence": [
+      0.90991521,
+      0.87131315,
+      0.83492827,
+      0.82747322,
+      0.81645703,
+      0.80258524,
+      0.75928015
+    ],
+    "class_id": [0, 0, 0, 0, 0, 0, 0],
+    "tracker_id": null,
+    "data": {
+      "class_name": [
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm",
+        "People Detection - v8 2023-09-11 7-03pm"
+      ],
+      "detection_id": [
+        "6279e8be-7b87-44ca-826c-fb93a98258e4",
+        "b1cb18d5-5f89-4990-8068-201fd3a7f6ff",
+        "4623846f-e7cd-4e05-bde5-71d6b6b30ea3",
+        "c085f897-3ca6-4f28-bb79-451fdaa3350d",
+        "1196c4a0-34bf-4993-8e07-168e9097e37c",
+        "1436c7d6-17d5-49ef-85a9-abf95e149072",
+        "946b0611-c3bd-450c-92bb-3a7bc9610af6"
+      ],
+      "parent_id": [
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]"
+      ],
+      "image_dimensions": [
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640]
+      ],
+      "inference_id": [
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de",
+        "cda02ec9-768f-4143-8a22-66b31d5979de"
+      ],
+      "prediction_type": [
+        "object-detection",
+        "object-detection",
+        "object-detection",
+        "object-detection",
+        "object-detection",
+        "object-detection",
+        "object-detection"
+      ],
+      "root_parent_id": [
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]",
+        "image.[0]"
+      ],
+      "root_parent_coordinates": [
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0]
+      ],
+      "root_parent_dimensions": [
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640]
+      ],
+      "parent_coordinates": [
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0],
+        [0, 0]
+      ],
+      "parent_dimensions": [
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640],
+        [480, 640]
+      ]
+    },
+    "metadata": {}
+  },
+  "label_visualization": "<inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000202EB84BD60>",
+  "model_1_predictions": {
+    "xyxy": [],
+    "mask": null,
+    "confidence": [],
+    "class_id": [],
+    "tracker_id": null,
+    "data": {
+      "class_name": [],
+      "detection_id": [],
+      "parent_id": [],
+      "image_dimensions": [],
+      "inference_id": [],
+      "prediction_type": [],
+      "root_parent_id": [],
+      "root_parent_coordinates": [],
+      "root_parent_dimensions": [],
+      "parent_coordinates": [],
+      "parent_dimensions": []
+    },
+    "metadata": {}
+  },
+  "dynamic_crop": [],
+  "google_gemini": []
+}

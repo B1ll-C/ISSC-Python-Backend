@@ -1,0 +1,330 @@
+Predictions for frame 1: {'model_predictions': Detections(xyxy=array([[179.,  10., 640., 479.]]), mask=None, confidence=array([0.62532115]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['7f2d8e54-9c56-4b43-b0c8-d947da79d381'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['1b1f42db-6435-41d0-b06c-0eca8c31fa05'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95AF0>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 19: {'model_predictions': Detections(xyxy=array([[181.,  12., 640., 479.]]), mask=None, confidence=array([0.67461377]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['34bffdba-2786-4b20-99a1-b5a307ba74e2'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['4a03bcf1-0520-4abb-ab63-3d2c53b41daf'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95100>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 22: {'model_predictions': Detections(xyxy=array([[180.,  12., 640., 479.]]), mask=None, confidence=array([0.69542772]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['d87ba451-52bb-4841-8832-ee2b907d63e0'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['65c1a7c5-d989-4298-a6ac-73edc08990db'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95B50>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 25: {'model_predictions': Detections(xyxy=array([[182.,   9., 640., 479.]]), mask=None, confidence=array([0.67162043]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['f4031b90-e59d-4441-af44-cba96924a93c'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['86e2c3e8-729d-4af2-8e12-545f90954c86'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95D30>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 28: {'model_predictions': Detections(xyxy=array([[186.,  10., 640., 479.]]), mask=None, confidence=array([0.68690157]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['db946a0f-cdad-4b0f-9aa9-6d10bf7c5e50'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['54dc2b06-6dc3-416a-8c48-73daf14a10bf'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95FA0>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 31: {'model_predictions': Detections(xyxy=array([[189.,  12., 640., 479.]]), mask=None, confidence=array([0.69924039]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['1939ed69-ee24-4a24-9c1f-8bf320d5351d'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['5ff6c45f-0dce-4d4d-9d96-276f78e89250'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED960C0>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 34: {'model_predictions': Detections(xyxy=array([[181.,  10., 640., 479.]]), mask=None, confidence=array([0.68533492]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['5db1719c-9a42-4451-810f-0a5ae3142514'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['0e4acac8-6b3f-4cff-a1de-07c6b0bf81d9'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED96210>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 37: {'model_predictions': Detections(xyxy=array([[190.,   8., 640., 479.]]), mask=None, confidence=array([0.6870423]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['2ee39fab-4c69-46b5-bb51-1f008347715a'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['923ba1ad-0d43-4f4c-b890-e83d14edc7d3'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED96390>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 40: {'model_predictions': Detections(xyxy=array([[198.,   9., 640., 479.]]), mask=None, confidence=array([0.6966064]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['ca46271c-5044-4f46-9e91-4069eca7483c'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['7227bef9-0290-4496-a02d-629f125ab7d4'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED96540>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 43: {'model_predictions': Detections(xyxy=array([[192.,   7., 640., 479.]]), mask=None, confidence=array([0.68813109]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['e257c9d8-3b8b-495e-8d85-76b9ea4bc523'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['a666eba2-82b6-4f47-ba88-35de6ec9ad96'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED966C0>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 46: {'model_predictions': Detections(xyxy=array([[188.,   5., 640., 479.]]), mask=None, confidence=array([0.6767776]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['e273fb10-08ef-4542-8c8e-ac9eaed91c07'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['4f8c4be5-7d6a-4d10-ab7e-d959686cfaab'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED96840>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 49: {'model_predictions': Detections(xyxy=array([[189.,   9., 640., 479.]]), mask=None, confidence=array([0.67748743]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['fc65d278-d45d-4d2c-a8a2-a7a77f3c9d77'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['1140cfd7-5c7b-4193-8221-cbef956784d3'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED96870>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+Predictions for frame 50: {'model_predictions': Detections(xyxy=array([[191.,   7., 640., 479.]]), mask=None, confidence=array([0.68141484]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['7037700c-dd49-416a-93c9-506584a12583'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['97cfa15b-fb49-4760-bfb2-c5b445e1f49d'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={}), 'label_visualization': <inference.core.workflows.execution_engine.entities.base.WorkflowImageData object at 0x00000211EED95F70>, 'model_1_predictions': Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={}), 'dynamic_crop': [], 'google_gemini': []}
+
+
+
+
+
+
+
+
+
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+VideoFrame attributes: ['__annotations__', '__class__', '__dataclass_fields__', '__dataclass_params__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__match_args__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'comes_from_video_file', 'fps', 'frame_id', 'frame_timestamp', 'image', 'measured_fps', 'source_id']
+
+
+
+ ERROR    Execution of step $steps.gemini_ocr encountered error.                          core.py:136
+                             Traceback (most recent call last):
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\execution_engine\v1\executor\core.py", line 124, in safe_execute_step
+                                 run_step(
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\execution_engine\v1\executor\core.py", line 151, in run_step
+                                 return run_simd_step(
+                                        ^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\execution_engine\v1\executor\core.py", line 175, in run_simd_step
+                                 return run_simd_step_in_batch_mode(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\execution_engine\v1\executor\core.py", line 215, in
+                             run_simd_step_in_batch_mode
+                                 outputs = step_instance.run(**step_input.parameters)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\models\foundation\google_gemini\v1.py", line 272, in run
+                                 raw_outputs = run_gemini_prompting(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\models\foundation\google_gemini\v1.py", line 318, in
+                             run_gemini_prompting
+                                 return execute_gemini_requests(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\models\foundation\google_gemini\v1.py", line 345, in
+                             execute_gemini_requests
+                                 return run_in_parallel(
+                                        ^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\common\utils.py", line 421, in run_in_parallel
+                                 return list(executor.map(_run, tasks))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_base.py",
+                             line 619, in result_iterator
+                                 yield _result_or_cancel(fs.pop())
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_base.py",
+                             line 317, in _result_or_cancel
+                                 return fut.result(timeout)
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_base.py",
+                             line 456, in result
+                                 return self.__get_result()
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_base.py",
+                             line 401, in __get_result
+                                 raise self._exception
+                               File "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\thread.py",
+                             line 59, in run
+                                 result = self.fn(*self.args, **self.kwargs)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\common\utils.py", line 425, in _run
+                                 return fun()
+                                        ^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\models\foundation\google_gemini\v1.py", line 367, in
+                             execute_gemini_request
+                                 google_api_key_safe_raise_for_status(response=response)
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference\core\workflow
+                             s\core_steps\models\foundation\google_gemini\v1.py", line 712, in
+                             google_api_key_safe_raise_for_status
+                                 response.raise_for_status()
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\requests\models.py",
+                             line 1024, in raise_for_status
+                                 raise HTTPError(http_error_msg, response=self)
+                             requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url:
+                             https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:genera
+                             teContent?key=AI***PU
+                    ERROR    Encountered inference error: Error during execution of step:      inference_pipeline.py:902
+                             $steps.gemini_ocr. Details: 429 Client Error: Too Many Requests
+                             for url:
+                             https://generativelanguage.googleapis.com/v1beta/models/gemini-1.
+                             5-flash:generateContent?key=AI***PU
+                             Traceback (most recent call last):
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 124,
+                             in safe_execute_step
+                                 run_step(
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 151,
+                             in run_step
+                                 return run_simd_step(
+                                        ^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 175,
+                             in run_simd_step
+                                 return run_simd_step_in_batch_mode(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 215,
+                             in run_simd_step_in_batch_mode
+                                 outputs = step_instance.run(**step_input.parameters)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\models\foundation\google_gemini\v1.py"
+                             , line 272, in run
+                                 raw_outputs = run_gemini_prompting(
+                                               ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\models\foundation\google_gemini\v1.py"
+                             , line 318, in run_gemini_prompting
+                                 return execute_gemini_requests(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\models\foundation\google_gemini\v1.py"
+                             , line 345, in execute_gemini_requests
+                                 return run_in_parallel(
+                                        ^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\common\utils.py", line 421, in
+                             run_in_parallel
+                                 return list(executor.map(_run, tasks))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 619, in result_iterator
+                                 yield _result_or_cancel(fs.pop())
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 317, in _result_or_cancel
+                                 return fut.result(timeout)
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 456, in result
+                                 return self.__get_result()
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 401, in __get_result
+                                 raise self._exception
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\thre
+                             ad.py", line 59, in run
+                                 result = self.fn(*self.args, **self.kwargs)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\common\utils.py", line 425, in _run
+                                 return fun()
+                                        ^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\models\foundation\google_gemini\v1.py"
+                             , line 367, in execute_gemini_request
+                                 google_api_key_safe_raise_for_status(response=response)
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\core_steps\models\foundation\google_gemini\v1.py"
+                             , line 712, in google_api_key_safe_raise_for_status
+                                 response.raise_for_status()
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\requests\
+                             models.py", line 1024, in raise_for_status
+                                 raise HTTPError(http_error_msg, response=self)
+                             requests.exceptions.HTTPError: 429 Client Error: Too Many
+                             Requests for url:
+                             https://generativelanguage.googleapis.com/v1beta/models/gemini-1.
+                             5-flash:generateContent?key=AI***PU
+
+                             The above exception was the direct cause of the following
+                             exception:
+
+                             Traceback (most recent call last):
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\interfaces\stream\inference_pipeline.py", line 874, in
+                             _execute_inference
+                                 predictions = self._on_video_frame(video_frames)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\interfaces\stream\model_handlers\workflows.py", line 54, in
+                             run_workflow
+                                 return execution_engine.run(
+                                        ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\core.py", line 70, in run
+                                 return self._engine.run(
+                                        ^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\core.py", line 94, in run
+                                 result = run_workflow(
+                                          ^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \usage_tracking\collector.py", line 650, in sync_wrapper
+                                 res = func(*args, **kwargs)
+                                       ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\profiling\core.py", line 264, in
+                             wrapper
+                                 return func(*args, **kwargs)
+                                        ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 60,
+                             in run_workflow
+                                 execute_steps(
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\profiling\core.py", line 264, in
+                             wrapper
+                                 return func(*args, **kwargs)
+                                        ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 104,
+                             in execute_steps
+                                 _ = run_steps_in_parallel(steps=steps_functions,
+                             max_workers=max_concurrent_steps)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\utils.py", line 12,
+                             in run_steps_in_parallel
+                                 return list(executor.map(_run, steps))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 619, in result_iterator
+                                 yield _result_or_cancel(fs.pop())
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 317, in _result_or_cancel
+                                 return fut.result(timeout)
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 456, in result
+                                 return self.__get_result()
+                                        ^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\_bas
+                             e.py", line 401, in __get_result
+                                 raise self._exception
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\concurrent\futures\thre
+                             ad.py", line 59, in run
+                                 result = self.fn(*self.args, **self.kwargs)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\utils.py", line 16,
+                             in _run
+                                 return fun()
+                                        ^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\profiling\core.py", line 264, in
+                             wrapper
+                                 return func(*args, **kwargs)
+                                        ^^^^^^^^^^^^^^^^^^^^^
+                               File
+                             "D:\Anaconda\Anaconda_Files\envs\issc\Lib\site-packages\inference
+                             \core\workflows\execution_engine\v1\executor\core.py", line 137,
+                             in safe_execute_step
+                                 raise StepExecutionError(
+                             inference.core.workflows.errors.StepExecutionError: Error during
+                             execution of step: $steps.gemini_ocr. Details: 429 Client Error:
+                             Too Many Requests for url:
+                             https://generativelanguage.googleapis.com/v1beta/models/gemini-1.
+                             5-flash:generateContent?key=AI***PU
