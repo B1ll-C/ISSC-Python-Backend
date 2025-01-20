@@ -9,6 +9,7 @@ from inference_sdk import InferenceHTTPClient
 from inference import InferencePipeline
 from inference.core.interfaces.camera.entities import VideoFrame
 import time
+import easyocr
 
 # Set up the Roboflow Inference client
 # CLIENT = InferenceHTTPClient(
@@ -19,6 +20,9 @@ import time
 # Dictionary to store pipelines and frames for multiple cameras
 camera_pipelines = {}
 camera_frames = {}
+
+reader = easyocr.Reader(['en'], gpu=False)
+
 def num_of_cams():
     return 1
 def check_cams(request):
@@ -49,30 +53,44 @@ def sink(predictions: dict, video_frame, camera_id):
 
         if 'model_1_predictions' in predictions:
             plate_detections = predictions['model_1_predictions']
+
             for bbox, confidence, class_name in zip(
-                    plate_detections.xyxy,
-                    plate_detections.confidence,
-                    plate_detections.data['class_name']
+                plate_detections.xyxy,
+                plate_detections.confidence,
+                plate_detections.data['class_name']
             ):
-                custom_plate_class_name = "License Plate"
                 x1, y1, x2, y2 = map(int, bbox)
+
+
+                height, width, _ = frame.shape
+                x1, y1, x2, y2 = max(0, x1), max(0, y1), min(width, x2), min(height, y2)
+
+                if x1 == x2 or y1 == y2:
+                    continue
+
+                cropped_image = frame[y1:y2, x1:x2]
+
+                gray = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2GRAY)
+                _, thresholded = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+                denoised = cv2.fastNlMeansDenoising(thresholded, None, 30, 7, 21)
+
+                result = reader.readtext(denoised)
+
+
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
-                label = f"{custom_plate_class_name} ({confidence:.2f})"
-                cv2.putText(frame, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
-                cropped_img = frame[y1:y2, x1:x2]
-                temp_cropped_image_path = "temp_cropped_image.jpg"
-                # cv2.imwrite(temp_cropped_image_path, cropped_img)
+                if result:
+                    for detection in result:
+                        _, text, confidence = detection
 
-                # result = CLIENT.ocr_image(inference_input=temp_cropped_image_path)
-                # if result and 'predictions' in result:
-                #     ocr_text = result['predictions']
-                #     if ocr_text:
-                #         ocr_label = f"Text: {ocr_text[0]['text']}"
-                #         print(f"OCR Text: {ocr_text[0]['text']}")
-                #         cv2.putText(frame, ocr_label, (x1, y2 + 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 0), 2)
+                        ocr_label = f"Plate : {text} ({confidence:.2f})"
 
-                # os.remove(temp_cropped_image_path)
+                        text_size = cv2.getTextSize(ocr_label, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0]
+                        text_w, text_h = text_size
+                        cv2.rectangle(frame, (x1, y2 + 10), (x1 + text_w, y2 + 10 + text_h), (0, 0, 255), -1)
+
+
+                        cv2.putText(frame, ocr_label, (x1, y2 + 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
         # Update the latest frame for this camera_id
         camera_frames[camera_id] = frame
