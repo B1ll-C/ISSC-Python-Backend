@@ -9,6 +9,9 @@ from inference import get_model
 from dotenv import load_dotenv
 import os
 from pathlib import Path
+import easyocr
+
+reader = easyocr.Reader(['en'])
 
 # Load environment variables
 env_path = Path(__file__).resolve().parent.parent.parent / ".env"
@@ -47,6 +50,55 @@ def generate_no_signal_frame():
     cv2.putText(frame, "!", (305, 345), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 4, cv2.LINE_AA)
     return frame
 
+# def background_inference(camera_id):
+#     """Background thread for running YOLO inference on a specific camera."""
+#     global running
+#     camera = cameras[camera_id]
+#     frame_queue = frame_queues[camera_id]
+
+#     while running:
+#         if not camera.isOpened():
+#             no_signal_frame = generate_no_signal_frame()
+#             if frame_queue.full():
+#                 frame_queue.get()
+#             frame_queue.put(no_signal_frame)
+#             continue
+
+#         ret, frame = camera.read()
+#         if not ret:
+#             no_signal_frame = generate_no_signal_frame()
+#             if frame_queue.full():
+#                 frame_queue.get()
+#             frame_queue.put(no_signal_frame)
+#             continue
+
+#         # Run inference on the frame using both models
+#         results_person = model_person.infer(frame)[0]
+#         results_plate = model_plate.infer(frame)[0]
+
+#         # Convert results to detections
+#         detections_person = sv.Detections.from_inference(results_person)
+#         detections_plate = sv.Detections.from_inference(results_plate)
+
+#         # Annotate the frame for person detection
+#         annotated_frame = bounding_box_annotator.annotate(scene=frame, detections=detections_person)
+#         annotated_frame = label_annotator.annotate(scene=annotated_frame, detections=detections_person)
+
+#         # Annotate the frame for plate detection
+#         annotated_frame = bounding_box_annotator.annotate(scene=annotated_frame, detections=detections_plate)
+#         annotated_frame = label_annotator.annotate(scene=annotated_frame, detections=detections_plate)
+
+#         # Add the annotated frame to the queue
+#         if frame_queue.full():
+#             frame_queue.get()
+#         frame_queue.put(annotated_frame)
+
+#         # Print detection info for debugging
+#         if len(detections_person) > 0:
+#             print(f"Camera {camera_id}: {len(detections_person)} person(s) detected.")
+#         if len(detections_plate) > 0:
+#             print(f"Camera {camera_id}: {len(detections_plate)} plate(s) detected.")
+
 def background_inference(camera_id):
     """Background thread for running YOLO inference on a specific camera."""
     global running
@@ -80,6 +132,24 @@ def background_inference(camera_id):
         # Annotate the frame for person detection
         annotated_frame = bounding_box_annotator.annotate(scene=frame, detections=detections_person)
         annotated_frame = label_annotator.annotate(scene=annotated_frame, detections=detections_person)
+
+        # Process license plate detections
+        for plate in detections_plate:
+            # Get bounding box coordinates
+            x1, y1, x2, y2 = map(int, plate.bbox)
+
+            # Crop the detected region
+            cropped_plate = frame[y1:y2, x1:x2]
+
+            # Preprocess the cropped image
+            gray_plate = cv2.cvtColor(cropped_plate, cv2.COLOR_BGR2GRAY)  # Convert to grayscale
+            denoised_plate = cv2.fastNlMeansDenoising(gray_plate, None, 30, 7, 21)  # Denoise
+
+            # Run EasyOCR on the preprocessed image
+            ocr_results = reader.readtext(denoised_plate)
+            for (bbox, text, confidence) in ocr_results:
+                if confidence > 0.5:  # Filter low-confidence results
+                    print(f"OCR Result: {text} (Confidence: {confidence:.2f})")
 
         # Annotate the frame for plate detection
         annotated_frame = bounding_box_annotator.annotate(scene=annotated_frame, detections=detections_plate)
