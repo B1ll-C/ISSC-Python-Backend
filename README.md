@@ -90,11 +90,29 @@ Generates a special "No Signal" frame when the camera feed is not available or i
 - The frame is created as a purple gradient and displays the text "NO SIGNAL" with a red circle and an exclamation mark to indicate that no video feed is available.
 
 
+
+## 4. Start Inference Threads (start_inference_threads function)
+
+#### Purpose:
+Starts background inference threads for each connected camera, allowing multiple cameras to be processed concurrently without blocking the main program.
+
+#### Function Flow:
+- The function iterates over the list of cameras and creates a separate thread for each camera.
+- Each thread runs the `background_inference` function, which processes video frames in the background.
+- Threads are started as **daemon threads**, meaning they automatically terminate when the main program exits.
+
+---
+
+
+
 # How These Functions Work Together
 
-- **Background Inference**: Runs in separate threads for each camera, continuously processing video frames, detecting people and license plates, performing OCR on detected plates, and annotating the frames.
+- **Start Inference Threads**: This function initializes background inference tasks for all cameras by spawning separate threads. It ensures that each camera can process its own video feed independently and simultaneously.
+- **Background Inference**: Each thread runs this function, which performs real-time processing of frames, including object detection and OCR for license plates.
+- **Concurrency**: With the inference running in the background, the main application can continue performing other tasks, such as streaming annotated video frames or handling client requests, without being slowed down by frame processing.
 - **Streaming Video**: The annotated frames are then made available for streaming to a client (e.g., a web browser) through the `generate_frames` function, which continuously sends frames to the client.
 - **Real-Time Updates**: This setup allows the application to display real-time video feeds with annotations and OCR results while processing the frames in the background.
+
 
 ---
 
