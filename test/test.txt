@@ -345,3 +345,38 @@ Model Predictions (Human Detection): Detections(xyxy=array([[ 73.,   3., 590., 4
 Model 1 Predictions (Plate Detection): Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'prediction_type': array([], dtype=float64), 'root_parent_id': array([], dtype=float64), 'root_parent_coordinates': array([], dtype=float64), 'root_parent_dimensions': array([], dtype=float64), 'parent_coordinates': array([], dtype=float64), 'parent_dimensions': array([], dtype=float64)}, metadata={})
 Model Predictions (Human Detection): Detections(xyxy=array([[ 78.,   3., 592., 479.]]), mask=None, confidence=array([0.66022789]), class_id=array([0]), tracker_id=None, data={'class_name': array(['People Detection - v8 2023-09-11 7-03pm'], dtype='<U39'), 'detection_id': array(['fac1e9b1-9934-4058-9a18-3176dfee8a07'], dtype='<U36'), 'parent_id': array(['image.[0]'], dtype='<U9'), 'image_dimensions': array([[480, 640]]), 'inference_id': array(['f9b26a2b-9c94-47e3-aecc-5c371c4d1c1d'], dtype='<U36'), 'prediction_type': array(['object-detection'], dtype='<U16'), 'root_parent_id': array(['image.[0]'], dtype='<U9'), 'root_parent_coordinates': array([[0, 0]]), 'root_parent_dimensions': array([[480, 640]]), 'parent_coordinates': array([[0, 0]]), 'parent_dimensions': array([[480, 640]])}, metadata={})
 Model 1 Predictions (Plate Detection): Detections(xyxy=array([], shape=(0, 4), dtype=float32), mask=None, confidence=array([], dtype=float32), class_id=array([], dtype=int32), tracker_id=None, data={'class_name': array([], dtype=float64), 'detection_id': array([], dtype=float64), 'parent_id': array([], dtype=float64), 'image_dimensions': array([], dtype=float64), 'inference_id': array([], dtype=float64), 'predic
+
+
+
+
+Unexpected format: (array([157., 209., 279., 240.]), None, 0.6787188649177551, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([158., 210., 279., 240.]), None, 0.6835472583770752, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Unexpected format: (array([158., 210., 279., 240.]), None, 0.6835472583770752, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([157., 209., 279., 240.]), None, 0.6789947748184204, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Unexpected format: (array([157., 209., 279., 240.]), None, 0.6789947748184204, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([157., 209., 279., 240.]), None, 0.680158257484436, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Unexpected format: (array([157., 209., 279., 240.]), None, 0.680158257484436, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([157., 209., 280., 240.]), None, 0.672545313835144, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Unexpected format: (array([157., 209., 280., 240.]), None, 0.672545313835144, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([158., 210., 280., 240.]), None, 0.6793149709701538, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Unexpected format: (array([158., 210., 280., 240.]), None, 0.6793149709701538, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Camera 0: 1 plate(s) detected.
+
+
+Camera 0: 1 plate(s) detected.
+Camera 0: 1 plate(s) detected.
+Detected plate: (array([252., 219., 522., 325.]), None, 0.7831722497940063, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Detected plate: (array([308., 123., 612., 247.]), None, 0.6565331220626831, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+Detected plate: (array([246., 160., 511., 272.]), None, 0.41549918055534363, 0, None, {'class_name': 'License Plate Recognition - v6 2024-10-23 6-33pm'})
+[([[36, 16], [276, 16], [276, 96], [36, 96]], 'CAR 505', 0.9985347641294662)]
+OCR Result: CAR 505 (Confidence: 1.00)
+Camera 0: 1 plate(s) detected.
+[]
+Camera 0: 1 plate(s) detected.
+[([[26, 12], [246, 12], [246, 86], [26, 86]], 'CAR 505', 0.9580025447135962)]
+OCR Result: CAR 505 (Confidence: 0.96)

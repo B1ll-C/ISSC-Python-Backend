@@ -8,6 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>wasap maderpaders</h1>
+    <h1>Live Camera Feeds</h1>
+    <div>
+        <h1>Camera Feed</h1>
+
+        <!-- Display Camera Feed -->
+        <img src="{% url 'video_feed' camera_id=0 %}" alt="Camera Feed" width="640" height="480">
+    </div>
 </body>
 </html>

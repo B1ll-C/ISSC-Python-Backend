@@ -133,23 +133,29 @@ def background_inference(camera_id):
         annotated_frame = bounding_box_annotator.annotate(scene=frame, detections=detections_person)
         annotated_frame = label_annotator.annotate(scene=annotated_frame, detections=detections_person)
 
-        # Process license plate detections
         for plate in detections_plate:
-            # Get bounding box coordinates
-            x1, y1, x2, y2 = map(int, plate.bbox)
+            print(f"Detected plate: {plate}") 
+            
 
-            # Crop the detected region
+            bbox = plate[0]
+            if isinstance(bbox, np.ndarray):
+                x1, y1, x2, y2 = map(int, bbox)
+            else:
+                print(f"Unexpected format for bounding box: {bbox}")
+                continue  # Skip if the format is unexpected
+            
             cropped_plate = frame[y1:y2, x1:x2]
-
-            # Preprocess the cropped image
-            gray_plate = cv2.cvtColor(cropped_plate, cv2.COLOR_BGR2GRAY)  # Convert to grayscale
-            denoised_plate = cv2.fastNlMeansDenoising(gray_plate, None, 30, 7, 21)  # Denoise
-
-            # Run EasyOCR on the preprocessed image
+            gray_plate = cv2.cvtColor(cropped_plate, cv2.COLOR_BGR2GRAY)
+            denoised_plate = cv2.fastNlMeansDenoising(gray_plate, None, 30, 7, 21)
+            
             ocr_results = reader.readtext(denoised_plate)
+
+            print(ocr_results)
+
             for (bbox, text, confidence) in ocr_results:
-                if confidence > 0.5:  # Filter low-confidence results
+                if confidence > 0.1:
                     print(f"OCR Result: {text} (Confidence: {confidence:.2f})")
+
 
         # Annotate the frame for plate detection
         annotated_frame = bounding_box_annotator.annotate(scene=annotated_frame, detections=detections_plate)
@@ -187,9 +193,6 @@ def start_inference_threads():
 # Start the background inference threads
 start_inference_threads()
 
-def home(request):
-    """Render the home page."""
-    return render(request, 'index.html')
 
 def check_cams(request):
     """Check the number of available cameras."""
@@ -214,3 +217,12 @@ def shutdown(request):
         camera.release()
     cv2.destroyAllWindows()
     return HttpResponse("Inference stopped. Cameras released.")
+
+
+
+
+def home(request):
+    """Render the home page."""
+    start_inference_threads()
+    context = {'camera_range': range(1)}  # Adjust this as needed
+    return render(request, 'index.html', context)
